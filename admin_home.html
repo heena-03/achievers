@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Achievers Orders</title>
+</head>
+<body>
+    <h1>📦 Orders Dashboard</h1>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Aim</th>
+            <th>Problem</th>
+            <th>Story</th>
+            <th>Action</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user[0] }}</td>
+            <td>{{ user[1] }}</td>
+            <td>{{ user[3] }}</td>
+            <td>{{ user[4] }}</td>
+            <td>{{ user[5] }}</td>
+            <td><a href="/generate/{{ user[0] }}">Generate Journal</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

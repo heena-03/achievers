@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievers - Start Your Journey</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Achievers ✨</h1>
+        <p>Begin your personalized growth journey by telling us about yourself.</p>
+
+        <form method="POST">
+            <!-- Name -->
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Email -->
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Aim -->
+            <label for="aim">What is your biggest goal/aim right now?</label>
+            <textarea id="aim" name="aim" rows="3" placeholder="Describe your main goal..." required></textarea>
+
+            <!-- Problem -->
+            <label for="problem">What do you feel is pulling you back from success?</label>
+            <textarea id="problem" name="problem" rows="3" placeholder="Describe your struggle..." required></textarea>
+
+            <!-- Story -->
+            <label for="story">Tell us your story in your own words</label>
+            <textarea id="story" name="story" rows="4" placeholder="Write freely about yourself..."></textarea>
+
+            <!-- Submit -->
+            <input type="submit" value="Start My Journey">
+        </form>
+    </div>
+</body>
+</html>
+

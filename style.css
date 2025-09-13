@@ -1,0 +1,69 @@
+/* style.css - Premium Luxurious Look */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111; /* deep black background */
+    color: #f5f5f5; /* soft white text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #1c1c1c; /* dark grey box */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 14px;
+    color: #bbb;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.02);
+}

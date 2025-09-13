@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Achievers Journal Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hi {{ user.name }} ✨</h1>
+        <p><strong>Your Aim:</strong> {{ user.aim }}</p>
+        <p><strong>Your Main Struggle:</strong> {{ user.problem }}</p>
+        <p><strong>Your Story:</strong> {{ user.story }}</p>
+
+        <h2>Your Test Answers:</h2>
+        <ul>
+            {% for key, value in answers.items() %}
+                <li><strong>{{ key }}:</strong> {{ value }}</li>
+            {% endfor %}
+        </ul>
+
+        <p class="highlight">✅ Based on this, your personalized 60-day journal is being designed.  
+        You’ll soon receive prompts that match your mindset and growth style.</p>
+
+        <a href="/">🔙 Start Again</a>
+    </div>
+</body>
+</html>

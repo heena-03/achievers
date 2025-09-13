@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Achiever - Start Your Journey</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Welcome to Achiever 🌟</h1>
+        <p>Let's design a personalized journal for you. Please answer honestly.</p>
+        <form method="POST">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="aim">Your Aim / Goal:</label><br>
+            <textarea id="aim" name="aim" rows="3" required></textarea><br><br>
+
+            <label for="story">Your Story (share a little about yourself):</label><br>
+            <textarea id="story" name="story" rows="5" required></textarea><br><br>
+
+            <label for="blocker">What do you think is pulling you back?</label><br>
+            <textarea id="blocker" name="blocker" rows="3" required></textarea><br><br>
+
+            <button type="submit">Continue →</button>
+        </form>
+    </div>
+</body>
+</html>
